@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <title>Contact</title>
+  </head>
+
+  <body>
+       <header>
+      <div class="inner">
+        <div class="logo_box">
+          <h1 id="title">
+            <a href="index.html"><span class="hdn">株式会社estra</span></a>
+          </h1>
+        </div>
+
+        <nav class="header_nav">
+          <ul class="global_nav">
+            <li>
+              <a href="../index.html"><span>ホーム</span></a>
+            </li>
+            <li>
+              <a href="../company/index.html"><span>企業案内</span></a>
+            </li>
+            <li>
+              <a href="../news/index.html"><span>ニュース</span></a>
+            </li>
+            <li>
+              <a href="../service/index.html"><span>サービス</span></a>
+            </li>
+            <li>
+              <a href="../recruit/index.html"><span>採用情報</span></a>
+            </li>
+            <li>
+              <a href="index.html"
+                ><span class="nav_contact">お問い合わせ</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+<main class="main__contact">
+      <div class="fv-top_company">
+        <h1 class="common-ttl">Contact</h1>
+        <h2 class="common-ttl_sub">お問い合わせ</h2>
+      </div>
+
+      <div class="inner">
+		<div class="content-menu">
+          <h1 class="content-contact_ttl">フォームからのお問い合わせ</h1>
+          <span class="privacy-line"></span>
+          <p class="contact-ttl_txt">記入内容の確認後、2~3営業日以内にご連絡させていただきます。</p>
+        </div>
+		
+		<form id="contact_form" action="confirm.php" method="post">
+			<dl id="form">
+				
+				<label>
+				
+					<dt>
+						お名前
+					<span class="required">必須</span></dt>
+					<dd>
+						<input type="text" name="name" class="name" id="name" placeholder="山田 太郎 " required>
+					</dd>
+				</label>
+				
+				<label>
+					<dt>
+						フリガナ
+			 <span class="required">必須</span></dt>
+					<dd>
+						<input type="text" name="kana" class="kana" id="kana" placeholder="やまだ たろう" required>
+					</dd>
+				</label>
+				
+				<label>
+					<dt>
+						電話番号
+					</dt>
+					<dd>
+						<input type="tel" name="tel" class="tel" id="tel">
+					</dd>
+				</label>
+				
+				<label>
+					<dt>
+						メールアドレス<span class="required">必須</span>
+					</dt>
+					<dd>
+						<input type="email" name="email" class="email" id="email1" required>
+					</dd>
+				</label>
+				
+				<label>
+					<dt>
+						メールアドレス（確認用）<span class="required">必須</span>
+					</dt>
+					<dd>
+						<input type="email" name="email2" class="email" id="email2" required>
+					</dd>
+				</label>
+
+        <label for="zip1">
+					<dt>
+						郵便番号
+					</dt>
+					<dd>
+						<input type="tel" name="zip1" class="zip1" id="zip1" maxlength="3">
+						&nbsp;-&nbsp;
+						<input type="tel" name="zip2" class="zip2" id="zip2" maxlength="4">
+					</dd>
+				</label>
+				
+				<label for="address">
+					<dt>
+						住所
+					</dt>
+					<dd>
+						<div class="address_box">
+							<select name="pref" id="pref">
+								<option selected="selected">選択してください</option>
+								<option value="北海道">北海道</option>
+								<option value="青森県">青森県</option>
+								<option value="岩手県">岩手県</option>
+								<option value="宮城県">宮城県</option>
+								<option value="秋田県">秋田県</option>
+								<option value="山形県">山形県</option>
+								<option value="福島県">福島県</option>
+								<option value="茨城県">茨城県</option>
+								<option value="栃木県">栃木県</option>
+								<option value="群馬県">群馬県</option>
+								<option value="埼玉県">埼玉県</option>
+								<option value="千葉県">千葉県</option>
+								<option value="東京都">東京都</option>
+								<option value="神奈川県">神奈川県</option>
+								<option value="新潟県">新潟県</option>
+								<option value="富山県">富山県</option>
+								<option value="石川県">石川県</option>
+								<option value="福井県">福井県</option>
+								<option value="山梨県">山梨県</option>
+								<option value="長野県">長野県</option>
+								<option value="岐阜県">岐阜県</option>
+								<option value="静岡県">静岡県</option>
+								<option value="愛知県">愛知県</option>
+								<option value="三重県">三重県</option>
+								<option value="滋賀県">滋賀県</option>
+								<option value="京都府">京都府</option>
+								<option value="大阪府">大阪府</option>
+								<option value="兵庫県">兵庫県</option>
+								<option value="奈良県">奈良県</option>
+								<option value="和歌山県">和歌山県</option>
+								<option value="鳥取県">鳥取県</option>
+								<option value="島根県">島根県</option>
+								<option value="岡山県">岡山県</option>
+								<option value="広島県">広島県</option>
+								<option value="山口県">山口県</option>
+								<option value="徳島県">徳島県</option>
+								<option value="香川県">香川県</option>
+								<option value="愛媛県">愛媛県</option>
+								<option value="高知県">高知県</option>
+								<option value="福岡県">福岡県</option>
+								<option value="佐賀県">佐賀県</option>
+								<option value="長崎県">長崎県</option>
+								<option value="熊本県">熊本県</option>
+								<option value="大分県">大分県</option>
+								<option value="宮崎県">宮崎県</option>
+								<option value="鹿児島県">鹿児島県</option>
+								<option value="沖縄県">沖縄県</option>
+							</select>
+							<input type="text" name="address" class="address" id="address">
+						</div>
+					</dd>
+				</label>
+				
+				<label>
+					<dt>
+						お問い合わせ内容<span class="required">必須</span>
+					</dt>
+					<dd>
+						<textarea name="comment" id="comment" placeholder="お問い合わせ内容をご記入ください" required></textarea>
+					</dd>
+				</label>
+			</dl>
+			<input type="submit" value="送信内容確認" id="submit">
+		</form>
+	</main>
+	</div>
+
+    <footer>
+      <span class="footer-line"></span>
+      <div class="inner">
+        <h1 class="footer-logo"></h1>
+        <div class="footermenu-content__item">
+          <ul class="footermenu-content_list">
+            <li><a href="#">企業案内</a></li>
+            <li><a href="#">ニュース</a></li>
+            <li><a href="#">サービス</a></li>
+            <li><a href="#">採用情報</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">個人情報保護方針</a></li>
+          </ul>
+        </div>
+        <div class="sns-content__item">
+          <div class="sns-content">
+            <ul class="sns-content_item">
+              <li><a href="#" target="_blank"></a></li>
+              <li><a href="#" target="_blank"></a></li>
+              <li><a href="#" target="_blank"></a></li>
+            </ul>
+          </div>
+
+          <div class="footermenu-content_small">
+            <small class="copy"
+              >&copy;copyright 2021 株式会社estra Co., Ltd. all rights
+              reserved.</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
